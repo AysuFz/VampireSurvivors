@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 19eb2f8508119cf42b80d5dea9b25610
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 290
+        width: 116
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037f57b6e11e6014da0fb2d45e0342cb
+      internalID: -970804838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 356
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bea0ecba3b811846ba8bc55a92c75aa
+      internalID: -695604502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 356
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1de0d8592fd8ef4a9f678613b27a2aa
+      internalID: -24138703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 20
+        width: 432
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a3f75194dd84b43a22c3d4df87e305
+      internalID: 1222519114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 124
+        width: 160
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafafbe1cc3de464080c4791da727c62
+      internalID: -232780025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 164
+        width: 95
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3f8fdb6b1fdb045bd848f94c7b0664
+      internalID: 1050917549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 212
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2378b78741d69429d13d8f3e8191df
+      internalID: 1789439774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 70
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2e545ce7431ca42b9a216312b652fa
+      internalID: 1709568030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 68
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cabc7689a8ac5e45a96185fa80e15ec
+      internalID: -1700897347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 68
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946076eb8ecb5c441bbeda29741ab409
+      internalID: 1570671407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 84
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933b9ff5b2ab3f043903faf55adf653f
+      internalID: -1391674364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 87
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16dd03990981833498951b7834c52983
+      internalID: 1284913363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 84
+        width: 128
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744a340f1c5877d479e120d4ca8127ce
+      internalID: 1444953581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 28
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68827302c0710bf49bc57e5042f82182
+      internalID: 810223267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 37
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d41b07fc5c234d4eb1db6e7d448bf2b
+      internalID: -1652250483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 4
+        width: 80
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cecdba55a8162e643a822e1c638f19ca
+      internalID: 1534412303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 20
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fd2c36dc1e9cd4fb2174dc403b4574
+      internalID: 619965967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 52
+        width: 96
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b3a92bc3d314c488e682dbd5f03d82
+      internalID: 443487319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 52
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eac6b91e4f244141aaee37278faadf1
+      internalID: 21795357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 52
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b768c5e420d78c743990352ceae2ab4f
+      internalID: 1570270124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 20
+        width: 96
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35573fde89307db4c9dc738c33c56bde
+      internalID: -453555264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_TileSet_Cemetery_Full_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 20
+        width: 112
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263ab3d15b533ac4fa4e69e31afdd5fa
+      internalID: 253768349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      NES_TileSet_Cemetery_Full_Sheet_0: -970804838
+      NES_TileSet_Cemetery_Full_Sheet_1: -695604502
+      NES_TileSet_Cemetery_Full_Sheet_10: -1391674364
+      NES_TileSet_Cemetery_Full_Sheet_11: 1284913363
+      NES_TileSet_Cemetery_Full_Sheet_12: 1444953581
+      NES_TileSet_Cemetery_Full_Sheet_13: 810223267
+      NES_TileSet_Cemetery_Full_Sheet_14: -1652250483
+      NES_TileSet_Cemetery_Full_Sheet_15: 1534412303
+      NES_TileSet_Cemetery_Full_Sheet_16: 619965967
+      NES_TileSet_Cemetery_Full_Sheet_17: 443487319
+      NES_TileSet_Cemetery_Full_Sheet_18: 21795357
+      NES_TileSet_Cemetery_Full_Sheet_19: 1570270124
+      NES_TileSet_Cemetery_Full_Sheet_2: -24138703
+      NES_TileSet_Cemetery_Full_Sheet_20: -453555264
+      NES_TileSet_Cemetery_Full_Sheet_21: 253768349
+      NES_TileSet_Cemetery_Full_Sheet_3: 1222519114
+      NES_TileSet_Cemetery_Full_Sheet_4: -232780025
+      NES_TileSet_Cemetery_Full_Sheet_5: 1050917549
+      NES_TileSet_Cemetery_Full_Sheet_6: 1789439774
+      NES_TileSet_Cemetery_Full_Sheet_7: 1709568030
+      NES_TileSet_Cemetery_Full_Sheet_8: -1700897347
+      NES_TileSet_Cemetery_Full_Sheet_9: 1570671407
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
