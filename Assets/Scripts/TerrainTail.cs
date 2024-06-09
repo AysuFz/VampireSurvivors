@@ -6,6 +6,7 @@ using UnityEngine;
 public class TerrainTail : MonoBehaviour
 {
     [SerializeField] Vector2Int tilePos;
+    [SerializeField] List<SpawnObject> spawnObjects;
     void Start()
     {
         GetComponentInParent<WorldScrolling>().Add(gameObject, tilePos);
@@ -14,4 +15,11 @@ public class TerrainTail : MonoBehaviour
     }
 
  
+    public void Spawn()
+    {
+        for(int i = 0; i < spawnObjects.Count; i++)
+        {
+            spawnObjects[i].Spawn();
+        }
+    }
 }

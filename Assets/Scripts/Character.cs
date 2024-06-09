@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,36 @@ public class Character : MonoBehaviour
     public int currentHp = 1000;
     private bool isDead = false;
 
+    [HideInInspector] public Level level;
+    [HideInInspector] public Coins coins;
+
     [SerializeField] statusBar hpBar;
+    [SerializeField] CharacterData selectedCharacter;
+
+    private void Awake()
+    {
+        level = GetComponent<Level>();
+        coins = GetComponent<Coins>();
+    }
+    private void Start()
+    {
+
+        LoadSelectedCharacter(selectedCharacter);
+
+        hpBar.SetState(currentHp, maxHp);
+    }
+
+    private void LoadSelectedCharacter(CharacterData selectedCharacter)
+    {
+        InitAnimation(selectedCharacter.spritePrefab);
+    }
+
+    private void InitAnimation(GameObject spritePrefab)
+    {
+       GameObject animeObject = Instantiate(spritePrefab, transform);
+        GetComponent<Animate2>().SetAnimate(animeObject);
+    }
+
     public void takeDamage(int damage)
     {
         if(isDead == true)
@@ -37,6 +67,8 @@ public class Character : MonoBehaviour
         {
             currentHp = maxHp;
         }
+
+        hpBar.SetState(currentHp, maxHp);
     }
     
     private void OnTriggerEnter2D(Collider2D other)

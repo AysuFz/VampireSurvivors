@@ -4,53 +4,31 @@ using UnityEngine;
 
 public class EnemiesManager : MonoBehaviour
 {
+    [SerializeField] StageProgress stageProgress;
     [SerializeField] GameObject enemy;
     [SerializeField] Vector2 spawnArea;
     [SerializeField] float spawnTimer;
     [SerializeField] GameObject player;
-    float timer;
-    private void Update()
-    {
-        timer -= Time.deltaTime;
-        if(timer < 0f)
-        {
-            SpawnEnemy();
-            timer = spawnTimer;
-        }
-    }
 
-    private void SpawnEnemy()
+    public void SpawnEnemy(EnemyData enemyToSpawn)
     {
-        Vector3 position = GenerateRandomPos();
+        Vector3 position = UtilityTools.GenerateRandomPosSquarePattern(spawnArea);
 
         position += player.transform.position;
-
         GameObject newEnemy = Instantiate(enemy);
         newEnemy.transform.position = position;
-        newEnemy.GetComponent<Enemy>().setTarget(player);
+
+        Enemy newEnemyComponent = newEnemy.GetComponent<Enemy>();
+        newEnemyComponent.setTarget(player);
+        newEnemyComponent.SetStats(enemyToSpawn.stats);
+        newEnemyComponent.UpdateStatsForProgress(stageProgress.Progress);
+
 
         newEnemy.transform.parent = transform;
-    }
 
-    private Vector3 GenerateRandomPos()
-    {
-        Vector3 position = new Vector3();
 
-        float f = UnityEngine.Random.value > 0.5f ? -1f : 1f;
-
-        if(UnityEngine.Random.value > 0.5f)
-        {
-            position.x = UnityEngine.Random.Range(-spawnArea.x, spawnArea.x);
-            position.y = spawnArea.y * f;
-            
-        }
-        else
-        {
-            position.y = UnityEngine.Random.Range(-spawnArea.y, spawnArea.y);
-            position.x = spawnArea.x * f;
-        }
-        position.z = 0;
-
-        return position;
+        GameObject spriteObject = Instantiate(enemyToSpawn.animatedPrefab);
+        spriteObject.transform.parent = newEnemy.transform;
+        spriteObject.transform.localPosition = Vector3.zero;
     }
 }
