@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7d4298e29a7b983479ef1dde655f263c
+guid: 31fc3fb7319b02d4ba27a535146f444c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -110,76 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: photo_2024-06-06_01-57-05_0
+      name: divider-fade-001_0
       rect:
         serializedVersion: 2
-        x: 959
-        y: 234
-        width: 26
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 824f6935b94264e4d99d9738c83d8b50
-      internalID: -1258536978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: photo_2024-06-06_01-57-05_1
-      rect:
-        serializedVersion: 2
-        x: 285
-        y: 33
-        width: 45
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 297683e0fe2f4ac4894ec8be74130bdc
-      internalID: -86650686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: photo_2024-06-06_01-57-05_2
-      rect:
-        serializedVersion: 2
-        x: 760
-        y: 411
-        width: 93
-        height: 97
-      alignment: 9
-      pivot: {x: 0.5384565, y: 0.5000021}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9d38670fef3d1b428f4ff04cc5cec35
-      internalID: -1374259270
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: photo_2024-06-06_01-57-05_3
-      rect:
-        serializedVersion: 2
-        x: 1097
-        y: 273
-        width: 32
-        height: 43
+        x: 0
+        y: 22
+        width: 186
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,50 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25b29ae02b231274c875160f3307ccb7
-      internalID: -381935465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: photo_2024-06-06_01-57-05_4
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 94
-        width: 22
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f728accdb53d1b54182efcdf71a69317
-      internalID: 1237383906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: photo_2024-06-06_01-57-05_5
-      rect:
-        serializedVersion: 2
-        x: 1191
-        y: 513
-        width: 35
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b0dbd51aa0a80a40a45666a2ba509eb
-      internalID: 60717624
+      spriteID: 628a2d4221ce86b46b2243efad6bf7a9
+      internalID: 1979389416
       vertices: []
       indices: 
       edges: []
@@ -246,12 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      photo_2024-06-06_01-57-05_0: -1258536978
-      photo_2024-06-06_01-57-05_1: -86650686
-      photo_2024-06-06_01-57-05_2: -1374259270
-      photo_2024-06-06_01-57-05_3: -381935465
-      photo_2024-06-06_01-57-05_4: 1237383906
-      photo_2024-06-06_01-57-05_5: 60717624
+      divider-fade-001_0: 1979389416
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
