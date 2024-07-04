@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "285218514409",
+    "project_id": "vampire-survivors-c24f5",
+    "storage_bucket": "vampire-survivors-c24f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285218514409:android:59f3b913a291b1d0815778",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.Vampire"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqENUFn1UIxqTe5jstfZrTifXfu8AieuU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

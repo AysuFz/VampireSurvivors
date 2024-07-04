@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9131c9b22177ea49b7ecf50b1179a11, type: 3}
+  m_Name: ThrowingKnife
+  m_EditorClassIdentifier: 
+  name: Throwing Knife
+  stats:
+    damage: 100
+    timeToAttack: 2
+  weaponBasePrefab: {fileID: 5780550408543058872, guid: f9bfc1b0f633f3e468273032318d1526, type: 3}

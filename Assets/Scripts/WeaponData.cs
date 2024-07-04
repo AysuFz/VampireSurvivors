@@ -7,6 +7,12 @@ using UnityEngine;
 {
     public int damage;
     public float timeToAttack;
+
+    public WeaponStats(int damage, float timeToAttack)
+    {
+        this.damage = damage;
+        this.timeToAttack = timeToAttack;
+    }
 }
 
 [CreateAssetMenu] public class WeaponData : ScriptableObject
