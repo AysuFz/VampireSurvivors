@@ -13,4 +13,5 @@ public enum UpgradeType
     public Sprite icon;
 
     public WeaponData weaponData;
+    public WeaponStats weaponUpgradeStats;
 }

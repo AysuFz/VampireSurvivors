@@ -7,7 +7,7 @@ public class ThrowingDaggerProjectile : MonoBehaviour
     Vector3 direction;
     bool hitDetected = false;
     [SerializeField] float speed = 30;
-    [SerializeField] int damage = 3;
+    public int damage = 3;
 
 
     public void SetDirection(float dir_x, float dir_y)

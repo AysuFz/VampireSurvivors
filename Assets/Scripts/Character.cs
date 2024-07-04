@@ -8,18 +8,22 @@ public class Character : MonoBehaviour
     public int maxHp;
     public int currentHp = 1000;
     private bool isDead = false;
+    public float hpRegenerationRate = 50f;
+    public float hpRegenerationTimer;
 
     [HideInInspector] public Level level;
     [HideInInspector] public Coins coins;
-
     [SerializeField] statusBar hpBar;
     [SerializeField] CharacterData selectedCharacter;
+
 
     private void Awake()
     {
         level = GetComponent<Level>();
         coins = GetComponent<Coins>();
     }
+
+
     private void Start()
     {
 
@@ -28,16 +32,30 @@ public class Character : MonoBehaviour
         hpBar.SetState(currentHp, maxHp);
     }
 
+
+    private void Update()
+    {
+        hpRegenerationTimer += Time.deltaTime * hpRegenerationRate;
+        if (hpRegenerationTimer > 1f) 
+        {
+            Heal(1);
+            hpRegenerationTimer -= 1f;
+        }
+    }
+
+
     private void LoadSelectedCharacter(CharacterData selectedCharacter)
     {
         InitAnimation(selectedCharacter.spritePrefab);
     }
+
 
     private void InitAnimation(GameObject spritePrefab)
     {
        GameObject animeObject = Instantiate(spritePrefab, transform);
         GetComponent<Animate2>().SetAnimate(animeObject);
     }
+
 
     public void takeDamage(int damage)
     {
