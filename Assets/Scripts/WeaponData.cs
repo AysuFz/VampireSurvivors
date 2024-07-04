@@ -20,4 +20,5 @@ using UnityEngine;
     public string name;
     public WeaponStats stats;
     public GameObject weaponBasePrefab;
+    public List<UpgradeData> upgrades;
 }
