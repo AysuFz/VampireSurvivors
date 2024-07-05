@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ThrowingDaggerProjectile : MonoBehaviour
+public class ThrowingKnifeProjectile : MonoBehaviour
 {
     Vector3 direction;
     bool hitDetected = false;

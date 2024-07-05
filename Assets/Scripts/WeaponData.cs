@@ -7,11 +7,13 @@ using UnityEngine;
 {
     public int damage;
     public float timeToAttack;
+    public int numberOfAttacks;
 
-    public WeaponStats(int damage, float timeToAttack)
+    public WeaponStats(int damage, float timeToAttack, int numberOfAttacks)
     {
         this.damage = damage;
         this.timeToAttack = timeToAttack;
+        this.numberOfAttacks = numberOfAttacks;
     }
 
 
@@ -19,6 +21,7 @@ using UnityEngine;
     {
         this.damage += weaponUpgradeStats.damage;
         this.timeToAttack += weaponUpgradeStats.timeToAttack;
+        this.numberOfAttacks += weaponUpgradeStats.numberOfAttacks;
     }
 }
 
