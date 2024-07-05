@@ -4,6 +4,10 @@ using Firebase;
 using Firebase.Auth;
 using TMPro;
 using System.Threading.Tasks;
+using UnityEditor.VersionControl;
+using TMPro.EditorUtilities;
+using UnityEditor.Compilation;
+using UnityEngine.SceneManagement;
 
 public class AuthManager : MonoBehaviour
 {
@@ -33,22 +37,30 @@ public class AuthManager : MonoBehaviour
     public TMP_InputField passwordRegisterVerifyField;
     public TMP_Text warningRegisterText;
 
-    void Awake()
+
+    private void Start()
     {
-        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
-        {
-            dependencyStatus = task.Result;
-            if (dependencyStatus == DependencyStatus.Available)
-            {
-                //If they are avalible Initialize Firebase
-                InitializeFirebase();
-            }
-            else
-            {
-                Debug.LogError("Could not resolve all Firebase dependencies: " + dependencyStatus);
-            }
-        });
+        StartCoroutine(CheckAndFixDependenciesAsync());
     }
+
+
+    private IEnumerator CheckAndFixDependenciesAsync()
+    {
+        var dependencyTask = FirebaseApp.CheckAndFixDependenciesAsync();
+        yield return new WaitUntil(() => dependencyTask.IsCompleted);
+
+        dependencyStatus = dependencyTask.Result;
+        if (dependencyStatus == DependencyStatus.Available)
+        {
+            //If they are avalible Initialize Firebase
+            InitializeFirebase();
+        }
+        else
+        {
+            Debug.LogError("Could not resolve all Firebase dependencies: " + dependencyStatus);
+        }
+    }
+
 
     private void InitializeFirebase()
     {
@@ -56,6 +68,36 @@ public class AuthManager : MonoBehaviour
         //Set the authentication instance object
         auth = FirebaseAuth.DefaultInstance;
     }
+
+
+    //private IEnumerator CheckForAutoLogin()
+    //{
+    //    if (User != null) 
+    //    {
+    //        var reloadUserTask = User.ReloadAsync();
+    //        yield return new WaitUntil(() => reloadUserTask.IsCompleted);
+    //        AutoLogin();
+    //    }
+    //    else
+    //    {
+     //       Debug.LogError("Could not resolve all Firebase dependencies: " + dependencyStatus);
+    //    }
+    //}
+
+
+    //private void AutoLogin()
+    //{
+    //   if (User != null) 
+    //    {
+    //        ReferencesOptions.userName = User.DisplayName;
+    //        SceneManager.LoadScene("GameScene");
+    //    }
+    //   else
+    //    {
+    //        Debug.LogError("Could not resolve all Firebase dependencies: " + dependencyStatus);
+    //    }
+    //}
+
 
 
     public void LoginButton()
@@ -166,7 +208,7 @@ public class AuthManager : MonoBehaviour
                 if (User != null)
                 {
                     UserProfile profile = new UserProfile { DisplayName = _username };
-                    Task ProfileTask = User.UpdateUserProfileAsync(profile);
+                    var ProfileTask = User.UpdateUserProfileAsync(profile);
                     yield return new WaitUntil(predicate: () => ProfileTask.IsCompleted);
 
                     if (ProfileTask.Exception != null)
