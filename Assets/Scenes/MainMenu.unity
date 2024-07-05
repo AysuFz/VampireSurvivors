@@ -4180,7 +4180,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -9341,6 +9341,7 @@ GameObject:
   - component: {fileID: 960688766}
   - component: {fileID: 960688768}
   - component: {fileID: 960688767}
+  - component: {fileID: 960688769}
   m_Layer: 5
   m_Name: Coins
   m_TagString: Untagged
@@ -9431,7 +9432,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -9465,6 +9466,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960688765}
   m_CullTransparentMesh: 1
+--- !u!114 &960688769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960688765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eac5996d7e618ee4d881179277b9830f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataContainer: {fileID: 11400000, guid: d4f79dad5df625847a2f8c786f6fbc57, type: 2}
 --- !u!1 &998431753
 GameObject:
   m_ObjectHideFlags: 0

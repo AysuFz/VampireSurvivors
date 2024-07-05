@@ -35,7 +35,7 @@ public class ThrowingKnifeWeapon : WeaponBase
             ThrowingKnifeProjectile throwingDaggerProjectile = thrownKnife.GetComponent<ThrowingKnifeProjectile>();
         
             throwingDaggerProjectile.SetDirection(playerMove.lastHorizontalVector, 0f);
-            throwingDaggerProjectile.damage = weaponStats.damage;
+            throwingDaggerProjectile.damage = GetDamage();
         }
 
         

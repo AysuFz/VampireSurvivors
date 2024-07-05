@@ -20,12 +20,13 @@ public class WhipWeapon : WeaponBase
 
     private void ApplyDamage(Collider2D[] colliders)
     {
+        int damage = GetDamage();
         for(int i = 0; i < colliders.Length; i++)
         {
             IDamageable e = colliders[i].GetComponent<IDamageable>();
             if (e != null)
             {
-                e.takeDamage(weaponStats.damage);
+                e.takeDamage(damage);
             }
         }
     }

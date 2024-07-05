@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public abstract class WeaponBase : MonoBehaviour
 {
     public WeaponData weaponData;
     float timer;
     public WeaponStats weaponStats;
+
+    Character wielder;
 
     public void Update()
     {
@@ -33,9 +36,23 @@ public abstract class WeaponBase : MonoBehaviour
 
     public abstract void Attack();
 
+
+    public int GetDamage()
+    {
+        int damage = (int)(weaponData.stats.damage * wielder.damageBonus);
+        return damage;
+    }
+
+
     public void Upgrade(UpgradeData upgradeData)
     {
         weaponStats.Sum(upgradeData.weaponUpgradeStats);
+    }
+
+
+    public void AddOwnerCharacter(Character character)
+    {
+        wielder = character;
     }
 
 }
