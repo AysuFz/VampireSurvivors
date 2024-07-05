@@ -9,6 +9,7 @@ public class ThrowingKnifeProjectile : MonoBehaviour
     [SerializeField] float speed = 30;
     public int damage = 3;
     private Vector3 savedDirection;
+    float ttl = 6f;
 
 
     public void SetDirection(float dir_x, float dir_y)
@@ -52,6 +53,12 @@ public class ThrowingKnifeProjectile : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+        }
+
+        ttl -= Time.deltaTime;
+        if(ttl < 0)
+        {
+            Destroy(gameObject);
         }
     }
 }

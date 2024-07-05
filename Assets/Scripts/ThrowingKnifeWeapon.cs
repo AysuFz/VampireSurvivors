@@ -24,8 +24,12 @@ public class ThrowingKnifeWeapon : WeaponBase
             GameObject thrownKnife = Instantiate(knifePrefab);
 
             Vector3 newKnifePosition = transform.position;
-            newKnifePosition.y -= (spread * weaponStats.numberOfAttacks) / 2;
-            newKnifePosition.y += i * spread;
+
+            if (weaponStats.numberOfAttacks > 1)
+            {
+                newKnifePosition.y -= (spread * (weaponStats.numberOfAttacks - 1)) / 2;
+                newKnifePosition.y += i * spread;
+            }
 
             thrownKnife.transform.position = newKnifePosition;
             ThrowingKnifeProjectile throwingDaggerProjectile = thrownKnife.GetComponent<ThrowingKnifeProjectile>();
