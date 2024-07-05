@@ -8,11 +8,17 @@ public class ThrowingDaggerProjectile : MonoBehaviour
     bool hitDetected = false;
     [SerializeField] float speed = 30;
     public int damage = 3;
+    private Vector3 savedDirection;
 
 
     public void SetDirection(float dir_x, float dir_y)
     {
+
         direction = new Vector3(dir_x, dir_y);
+        if(dir_x < 0.5f && dir_x >= 0f)
+        {
+            direction = new Vector3(1f , dir_y);
+        }
         if(dir_x < 0)
         {
             Vector3 scale = transform.localScale;
