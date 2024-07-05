@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6481514559580383915}
   - component: {fileID: 3019982498861809173}
   - component: {fileID: 5046410811894760317}
+  - component: {fileID: -5498889959292185078}
   m_Layer: 0
   m_Name: Bat sprite
   m_TagString: Untagged
@@ -106,3 +107,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-5498889959292185078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7755213584373941297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 937691818e35ac24a8d883203d11c671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropItemPrefabs:
+  - {fileID: 5830878451640713984, guid: 98b14c427e3e0874c9a9cac79369d7d8, type: 3}
+  - {fileID: 731804020585240797, guid: baef92fcd0c943844907c48f45a097ea, type: 3}
+  chance: 0.55

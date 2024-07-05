@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3972171163530878329}
   - component: {fileID: 5328088209828874456}
-  - component: {fileID: 6861624647817710835}
+  - component: {fileID: 6055534236144473846}
   m_Layer: 0
   m_Name: item2
   m_TagString: Untagged
@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 171070317113016337}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.805, y: -1.652, z: 0}
-  m_LocalScale: {x: 1.8, y: 1.8, z: 1}
+  m_LocalPosition: {x: 7.6704, y: -1.6093, z: 0}
+  m_LocalScale: {x: 3.4820547, y: 3.0224829, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 317293532, guid: 4bec1ec9f1e0b8847805ee848f124d4b, type: 3}
+  m_Sprite: {fileID: -759060459, guid: dce5117f893b2724a8b8649b0730f9fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &6861624647817710835
+--- !u!70 &6055534236144473846
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,6 +117,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0023037859, y: 0.0046588317}
-  m_Size: {x: 0.48439214, y: 0.93058014}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.16, y: 0.29}
   m_Direction: 0

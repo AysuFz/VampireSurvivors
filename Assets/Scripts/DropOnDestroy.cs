@@ -5,7 +5,7 @@ using UnityEngine;
 public class DropOnDestroy : MonoBehaviour
 {
     [SerializeField] List<GameObject> dropItemPrefabs;
-    [SerializeField] [Range(0f, 1f)] float chance;
+    [SerializeField] [Range(0f, 1f)] float chance = 1f;
 
     bool isQuitting = false;
 
