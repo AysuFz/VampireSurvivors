@@ -15,7 +15,6 @@ public class Character : MonoBehaviour
     [HideInInspector] public Level level;
     [HideInInspector] public Coins coins;
     [SerializeField] statusBar hpBar;
-    [SerializeField] CharacterData selectedCharacter;
     [SerializeField] DataContainer dataContainer;
 
 
@@ -28,7 +27,7 @@ public class Character : MonoBehaviour
 
     private void Start()
     {
-        LoadSelectedCharacter(selectedCharacter);
+        LoadSelectedCharacter(dataContainer.selectedCharacter);
 
         ApplyPersistentUpgrades();
 
@@ -60,6 +59,7 @@ public class Character : MonoBehaviour
     private void LoadSelectedCharacter(CharacterData selectedCharacter)
     {
         InitAnimation(selectedCharacter.spritePrefab);
+        GetComponent<WeaponManager>().AddWeapon(selectedCharacter.startingWeapon);
     }
 
 
