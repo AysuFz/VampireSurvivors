@@ -16,7 +16,10 @@ MonoBehaviour:
   upgrades:
   - persistentUpgrades: 0
     level: 0
+    maxLevel: 10
     costToUpgrade: 100
   - persistentUpgrades: 1
     level: 0
+    maxLevel: 10
     costToUpgrade: 100
+  selectedCharacter: {fileID: 11400000, guid: 3ce726e65b3aa3b49b6199b94f54b537, type: 2}

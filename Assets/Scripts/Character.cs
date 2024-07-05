@@ -28,9 +28,9 @@ public class Character : MonoBehaviour
 
     private void Start()
     {
-        ApplyPersistentUpgrades();
-
         LoadSelectedCharacter(selectedCharacter);
+
+        ApplyPersistentUpgrades();
 
         hpBar.SetState(currentHp, maxHp);
     }

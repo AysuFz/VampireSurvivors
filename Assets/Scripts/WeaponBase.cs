@@ -8,8 +8,14 @@ public abstract class WeaponBase : MonoBehaviour
     public WeaponData weaponData;
     float timer;
     public WeaponStats weaponStats;
-
     Character wielder;
+    public PlayerMove playerMove;
+
+
+    private void Awake()
+    {
+        playerMove = GetComponentInParent<PlayerMove>();
+    }
 
     public void Update()
     {

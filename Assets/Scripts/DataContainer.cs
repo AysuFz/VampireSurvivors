@@ -28,10 +28,17 @@ public class DataContainer : ScriptableObject
 {
     public int coins;
     public List<PlayerUpgrades> upgrades;
+    public CharacterData selectedCharacter;
 
     
     public int GetUpgradeLevel(PlayerPersistentUpgrades persistentUpgrade)
     {
         return upgrades[(int)persistentUpgrade].level;
+    }
+
+
+    public void SetSelectedCharacteer(CharacterData character) 
+    { 
+        selectedCharacter = character;
     }
 }

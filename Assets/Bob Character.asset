@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Bob
   spritePrefab: {fileID: 2301937370939215781, guid: fdba8f3b7bb88e14a8d90d50c6b06bb7, type: 3}
+  startingWeapon: {fileID: 11400000, guid: bb12181dd5a4f8b4fb1f8f35e4b950b4, type: 2}

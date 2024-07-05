@@ -15969,10 +15969,12 @@ MonoBehaviour:
   currentHp: 1000
   hpRegenerationRate: 50
   hpRegenerationTimer: 0
+  damageBonus: 0
   level: {fileID: 0}
   coins: {fileID: 0}
   hpBar: {fileID: 302477133}
-  selectedCharacter: {fileID: 11400000, guid: 3ce726e65b3aa3b49b6199b94f54b537, type: 2}
+  selectedCharacter: {fileID: 11400000, guid: 71429677ad5d77e4caaff5fe922c9a4c, type: 2}
+  dataContainer: {fileID: 11400000, guid: d4f79dad5df625847a2f8c786f6fbc57, type: 2}
 --- !u!114 &1622435889
 MonoBehaviour:
   m_ObjectHideFlags: 0

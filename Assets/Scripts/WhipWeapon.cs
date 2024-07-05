@@ -9,14 +9,6 @@ public class WhipWeapon : WeaponBase
     [SerializeField] GameObject rightWhip;
     [SerializeField] Vector2 attackSize = new Vector2(4f, 2f);
 
-    PlayerMove playerMove;
-
-
-    private void Awake()
-    {
-        playerMove = GetComponentInParent<PlayerMove>();
-    }
-
 
     private void ApplyDamage(Collider2D[] colliders)
     {
