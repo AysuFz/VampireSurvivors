@@ -11,10 +11,18 @@ using UnityEngine.SceneManagement;
 
 public class AuthManager : MonoBehaviour
 {
+    [Header("Display")]
+    [SerializeField] private TMP_Text usernameDisplayText;
+    //[SerializeField] private TMP_Text errorText;
+
+
     [Header("Panels")]
-    [SerializeField] GameObject mainMenuPanel;
+    [SerializeField] GameObject warningPanelSignup;
+    [SerializeField] GameObject warningPanelLogin;
+    [SerializeField] GameObject loginSuccessfull;
     [SerializeField] GameObject loginPanel;
     [SerializeField] GameObject signupPanel;
+    [SerializeField] GameObject forgetPasswordPanel;
 
 
     [Header("Firebase")]
@@ -145,6 +153,8 @@ public class AuthManager : MonoBehaviour
                     break;
             }
             warningLoginText.text = message;
+            warningPanelLogin.SetActive(true);
+            loginPanel.SetActive(false);
         }
         else
         {
@@ -153,8 +163,13 @@ public class AuthManager : MonoBehaviour
             Debug.LogFormat("User signed in successfully: {0} ({1})", User.DisplayName, User.Email);
             warningLoginText.text = "";
             confirmLoginText.text = "Logged In";
+            if (usernameDisplayText != null)
+            {
+                usernameDisplayText.text = $"Welcome, {User.DisplayName}!";
+            }
             loginPanel.SetActive(false);
-            mainMenuPanel.SetActive(true);
+            loginSuccessfull.SetActive(true);
+
         }
     }
 
@@ -198,6 +213,8 @@ public class AuthManager : MonoBehaviour
                         break;
                 }
                 warningRegisterText.text = message;
+                warningPanelSignup.SetActive(true);
+                signupPanel.SetActive(false);
             }
             else
             {
@@ -235,4 +252,48 @@ public class AuthManager : MonoBehaviour
         signupPanel.SetActive(false);
         loginPanel.SetActive(true);
     }
+
+    public void CloseSignupErrorPanel()
+    {
+        warningPanelSignup.SetActive(false);
+        signupPanel.SetActive(true);
+    }
+
+    public void CloseLoginErrorPanel()
+    {
+        warningPanelLogin.SetActive(false);
+        loginPanel.SetActive(true);
+    }
+
+    public void CloseloginSuccessfull()
+    {
+        loginSuccessfull.SetActive(false);
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void OpenRegisterPanel()
+    {
+        loginPanel.SetActive(false);
+        signupPanel.SetActive(true);
+    }
+
+    public void CloseRegisterPanel()
+    {
+        loginPanel.SetActive(true);
+        signupPanel.SetActive(false);
+    }
+
+
+    public void OpenForgetPassword()
+    {
+        loginPanel.SetActive(false);
+        forgetPasswordPanel.SetActive(true);
+    }
+
+    public void CloseForgetPassword()
+    {
+        loginPanel.SetActive(true);
+        forgetPasswordPanel.SetActive(false);
+    }
+
 }

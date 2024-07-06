@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 
@@ -30,7 +31,11 @@ public class DataContainer : ScriptableObject
     public List<PlayerUpgrades> upgrades;
     public CharacterData selectedCharacter;
 
-    
+
+    [SerializeField] private TMP_Text usernameText;
+    [SerializeField] private TMP_Text EmailText;
+
+
     public int GetUpgradeLevel(PlayerPersistentUpgrades persistentUpgrade)
     {
         return upgrades[(int)persistentUpgrade].level;
