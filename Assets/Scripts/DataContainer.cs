@@ -32,8 +32,9 @@ public class DataContainer : ScriptableObject
     public CharacterData selectedCharacter;
 
 
-    [SerializeField] private TMP_Text usernameText;
-    [SerializeField] private TMP_Text EmailText;
+    public string username;
+    public string email;
+    public string userId;
 
 
     public int GetUpgradeLevel(PlayerPersistentUpgrades persistentUpgrade)

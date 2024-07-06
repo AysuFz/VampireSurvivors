@@ -2,12 +2,17 @@ using System.Collections;
 using UnityEngine;
 using Firebase;
 using Firebase.Auth;
+using Firebase.Firestore;
+//using Firebase.Extentions;
 using TMPro;
 using System.Threading.Tasks;
 using UnityEditor.VersionControl;
 using TMPro.EditorUtilities;
 using UnityEditor.Compilation;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class AuthManager : MonoBehaviour
 {
@@ -44,6 +49,78 @@ public class AuthManager : MonoBehaviour
     public TMP_InputField passwordRegisterField;
     public TMP_InputField passwordRegisterVerifyField;
     public TMP_Text warningRegisterText;
+
+    //string userID;
+    //public InputField nameInput, coinInput;
+    //public InputField Inv1Input, Inv2Input, Inv3Input;
+    //public Text NameLbl, CoinLbl;
+    //public Text Inv1Lbl, Inv2Lbl, Inv3Lbl;
+    [SerializeField] DataContainer data;
+
+
+    public void LoadData()
+    {
+        FirebaseFirestore db = FirebaseFirestore.DefaultInstance;
+        DocumentReference DocRef = db.Collection("PlayerData").Document(data.userId);
+        DocRef.GetSnapshotAsync().ContinueWith(task =>
+        {
+            DocumentSnapshot snapshot = task.Result;
+
+            if (snapshot.Exists)
+            {
+                //NameLbl.text = snapshot.GetValue<string>("PlayerName");
+                data.coins = int.Parse(snapshot.GetValue<int>("PlayerCoin").ToString());
+
+                //List<string> invList = snapshot.GetValue<List<string>>("PlayerInventory");
+                //Inv1Lbl.text = invList[0];
+                //Inv2Lbl.text = invList[1];
+                //Inv3Lbl.text = invList[2];
+            }
+
+        });
+    }
+
+    public void SaveData()
+    {
+        FirebaseFirestore db = FirebaseFirestore.DefaultInstance;
+        Dictionary<string, object> userData = new Dictionary<string, object>
+        {
+            { "username", data.username },
+            { "coins", data.coins }
+        };
+
+        DocumentReference docRef = db.Collection("PlayerData").Document(data.userId);
+        docRef.SetAsync(userData).ContinueWith(task =>
+        {
+            if (task.IsCompleted)
+            {
+                Debug.Log("User data saved successfully.");
+            }
+            else
+            {
+                Debug.LogWarning("Failed to save user data.");
+            }
+        });
+        //FirebaseFirestore db = FirebaseFirestore.DefaultInstance;
+
+        // string playerName = nameInput.text;
+        //int playerCoin = int.Parse(coinInput.text);
+        //List<string> playerInventory = new List<string>();
+        //playerInventory.Add(Inv1Input.text);
+        //playerInventory.Add(Inv2Input.text);
+        //playerInventory.Add(Inv3Input.text);
+
+        //Dictionary<string, object> saveValues = new Dictionary<string, object>
+        //{
+        //    {"PlayerName", playerName},
+        //    {"PlayerCoin", data.coins}
+        //{"PlayerInventory", playerInventory}
+
+        //};
+
+        // DocumentReference docRef = db.Collection("PlayerData").Document(userID);
+        //docRef.SetAsync(saveValues);
+    }
 
 
     private void Start()
@@ -163,10 +240,19 @@ public class AuthManager : MonoBehaviour
             Debug.LogFormat("User signed in successfully: {0} ({1})", User.DisplayName, User.Email);
             warningLoginText.text = "";
             confirmLoginText.text = "Logged In";
+            if(User != null)
+            {
+                data.userId = User.UserId;
+            }
+
             if (usernameDisplayText != null)
             {
                 usernameDisplayText.text = $"Welcome, {User.DisplayName}!";
             }
+
+            LoadData();
+            data.email = User.Email;
+            data.username = User.DisplayName;
             loginPanel.SetActive(false);
             loginSuccessfull.SetActive(true);
 

@@ -3402,6 +3402,7 @@ MonoBehaviour:
   passwordRegisterField: {fileID: 0}
   passwordRegisterVerifyField: {fileID: 0}
   warningRegisterText: {fileID: 0}
+  data: {fileID: 0}
 --- !u!114 &833837871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10115,6 +10116,7 @@ MonoBehaviour:
   passwordRegisterField: {fileID: 1057620764}
   passwordRegisterVerifyField: {fileID: 1919881317}
   warningRegisterText: {fileID: 1220051161}
+  data: {fileID: 11400000, guid: d4f79dad5df625847a2f8c786f6fbc57, type: 2}
 --- !u!4 &2109297264
 Transform:
   m_ObjectHideFlags: 0
