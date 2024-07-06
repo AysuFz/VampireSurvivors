@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2abd9b81931f5c4e90975d74e7b7860, type: 3}
-  m_Name: WhipUpgrade(DoubleStrike)
+  m_Name: WhipUpgrade
   m_EditorClassIdentifier: 
-  upgradeType: 0
-  Name: DoubleStrike
-  icon: {fileID: 21300000, guid: b4c9361f90a94e94bb634b8a17832d65, type: 3}
+  upgradeType: 2
+  Name: Whip
+  icon: {fileID: 21300000, guid: de11ac3bf3229c449bc622cc97149ac7, type: 3}
   weaponData: {fileID: 11400000, guid: bb12181dd5a4f8b4fb1f8f35e4b950b4, type: 2}
   weaponUpgradeStats:
     damage: 0
     timeToAttack: 0
-    numberOfAttacks: 1
+    numberOfAttacks: 0
