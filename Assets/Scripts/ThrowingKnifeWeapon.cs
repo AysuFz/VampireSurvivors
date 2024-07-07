@@ -6,13 +6,6 @@ public class ThrowingKnifeWeapon : WeaponBase
 {
     [SerializeField] GameObject knifePrefab;
     [SerializeField] float spread = 0.5f;
-    PlayerMove playerMove;
-
-
-    private void Awake()
-    {
-        playerMove = GetComponentInParent<PlayerMove>();
-    }
 
 
     public override void Attack()

@@ -18,5 +18,5 @@ MonoBehaviour:
   weaponData: {fileID: 11400000, guid: bb12181dd5a4f8b4fb1f8f35e4b950b4, type: 2}
   weaponUpgradeStats:
     damage: 0
-    timeToAttack: -4
+    timeToAttack: -1
     numberOfAttacks: 0

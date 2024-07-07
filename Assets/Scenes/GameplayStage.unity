@@ -557,7 +557,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.0000069141, y: 122.9}
+  m_AnchoredPosition: {x: -0.0000069141, y: 148}
   m_SizeDelta: {x: 72.3263, y: 33.8949}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &29872840
@@ -10351,8 +10351,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000081062, y: 0.000051498}
-  m_SizeDelta: {x: 374.2726, y: 229.3881}
+  m_AnchoredPosition: {x: -3.2666, y: 0.8167}
+  m_SizeDelta: {x: 380.8057, y: 227.7548}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &986621819
 MonoBehaviour:
@@ -15973,7 +15973,6 @@ MonoBehaviour:
   level: {fileID: 0}
   coins: {fileID: 0}
   hpBar: {fileID: 302477133}
-  selectedCharacter: {fileID: 11400000, guid: 71429677ad5d77e4caaff5fe922c9a4c, type: 2}
   dataContainer: {fileID: 11400000, guid: d4f79dad5df625847a2f8c786f6fbc57, type: 2}
 --- !u!114 &1622435889
 MonoBehaviour:
@@ -16067,7 +16066,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponObjectsContainer: {fileID: 1811298210}
-  startingWeapon: {fileID: 11400000, guid: bb12181dd5a4f8b4fb1f8f35e4b950b4, type: 2}
 --- !u!1 &1629212815
 GameObject:
   m_ObjectHideFlags: 0
@@ -21372,8 +21370,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030518, y: -0.000015259}
-  m_SizeDelta: {x: 876, y: 408}
+  m_AnchoredPosition: {x: -0.37144, y: -0.97002}
+  m_SizeDelta: {x: 893.48, y: 453.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2081779709
 MonoBehaviour:

@@ -11,6 +11,7 @@ public class CoinsText : MonoBehaviour
     private void Start()
     {
         text = GetComponent<TMPro.TextMeshProUGUI>();
+        text.text = dataContainer.coins.ToString();
     }
 
     void Update()

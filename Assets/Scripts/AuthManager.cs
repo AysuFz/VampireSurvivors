@@ -6,9 +6,9 @@ using Firebase.Firestore;
 //using Firebase.Extentions;
 using TMPro;
 using System.Threading.Tasks;
-using UnityEditor.VersionControl;
-using TMPro.EditorUtilities;
-using UnityEditor.Compilation;
+//using UnityEditor.VersionControl;
+//using TMPro.EditorUtilities;
+//using UnityEditor.Compilation;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections.Generic;
@@ -243,6 +243,7 @@ public class AuthManager : MonoBehaviour
             if(User != null)
             {
                 data.userId = User.UserId;
+                LoadData();
             }
 
             if (usernameDisplayText != null)
@@ -250,12 +251,12 @@ public class AuthManager : MonoBehaviour
                 usernameDisplayText.text = $"Welcome, {User.DisplayName}!";
             }
 
-            LoadData();
+            
             data.email = User.Email;
             data.username = User.DisplayName;
             loginPanel.SetActive(false);
             loginSuccessfull.SetActive(true);
-
+            LoadData();
         }
     }
 
